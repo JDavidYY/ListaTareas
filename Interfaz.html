@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+        <a href="#" class="navbar-brand"> App de tareas</a>
+        </div>
+    </nav>
+
+    <!-- Contenido principal-->
+    <div class="container" >
+        <div class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="formTask">
+                            <div class="form-group">
+                                <input type="text" id="title" placeholder="Agregar alguna tarea" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="description" rows="8" cols="80" class="form-control" placeholder="Agrega una descripción"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block"> Guardar</button>
+                        </form>
+
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+</body>
+</html>
