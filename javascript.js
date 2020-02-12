@@ -24,7 +24,22 @@ document.getElementById('formTask').addEventListener('submit', guardarTarea);
         
         e.preventDefault();  
     }
+    function getTask(){
+        let tasks = JSON.parse(localStorage.getItem('tasks'))
+        let tasksView = document.getElementById('tasks')
+
+
+        for (i=0;i<tasks.length;i++){
+            tasksView.innerHTML += `<div class="card">
+                <div class="body-card">
+                   <p> ${tasks[i].title} - ${tasks[i].description} </p>
+                   <a class="btn btn-block btn btn-danger "> Tarea realizada </a>
+                </div>
+                </div>`
+        }
+    }
     //console.log("hola mundo mundial");
     //console.log(title, description)
 
 //console.log(localStorage.setItem('tasks',task))
+getTask();
